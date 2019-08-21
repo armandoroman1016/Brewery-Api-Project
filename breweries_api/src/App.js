@@ -9,7 +9,7 @@ import Favorites from'./components/Favorites';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <Route path= '/' component= {NavBar}/>
       <Switch>
         <Route exact path = '/' component = {LandingPage}/>
         <Route path = '/breweries' component = {BreweryList}/>
