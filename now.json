@@ -1,8 +1,8 @@
 {
     "version": 2,
     "name": "Brewery-Api-Project",
-    "builds": [{ "src": "breweries_api/package.json", "use": "@now/static-build", "config": {"distDir": "public"} }],
+    "builds": [{ "src": "breweries_api/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
     "routes": [
-        { "src": "/breweries_api", "dest": "breweries_api/$1" }
+        { "src": "/(.*)", "dest": "breweries_api/$1" }
     ]
 }
