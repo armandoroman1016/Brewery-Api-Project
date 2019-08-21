@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "name": "React-Redux-App",
-    "builds": [{ "src": "breweries_api/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "name": "Brewery-Api-Project",
+    "builds": [{ "src": "breweries_api/package.json", "use": "@now/static-build", "config": {"distDir": "public"} }],
     "routes": [
         { "src": "/breweries_api", "dest": "breweries_api/$1" }
     ]
